@@ -1,0 +1,149 @@
+<html>
+<head>
+	<title></title>	
+	<link href="css/dot-luv/jquery-ui-1.10.3.custom.min.css" rel="stylesheet">
+	<style type="text/css">
+
+
+	@font-face {
+		font-family: cool_font;
+		src: url('dimis.ttf');
+	}
+
+		.sprite-1{ background-position: 0 0; width: 64px; height: 64px;} 
+		.sprite-2{ background-position: 0 -64px; width: 64px; height: 64px; } 
+		.sprite-3{ background-position: 0 -128px; width: 64px; height: 64px; } 
+		.sprite-4{ background-position: 0 -192px; width: 64px; height: 64px; } 
+		.sprite-5{ background-position: 0 -256px; width: 64px; height: 64px; } 
+		.sprite-6{ background-position: 0 -320px; width: 64px; height: 64px; } 
+		.sprite-7{ background-position: 0 -384px; width: 64px; height: 64px; } 
+		.sprite-8{ background-position: 0 -448px; width: 64px; height: 64px; } 
+		.sprite-9{ background-position: 0 -512px; width: 64px; height: 64px; } 
+		.sprite-10{ background-position: 0 -576px; width: 64px; height: 64px; } 
+		.sprite-11{ background-position: 0 -640px; width: 64px; height: 64px; } 
+		.sprite-12{ background-position: 0 -704px; width: 64px; height: 64px; } 
+		.sprite-13{ background-position: 0 -768px; width: 64px; height: 64px; } 
+		.sprite-14{ background-position: 0 -832px; width: 64px; height: 64px; } 
+		.sprite-15{ background-position: 0 -896px; width: 64px; height: 64px; } 
+		.sprite-16{ background-position: 0 -960px; width: 64px; height: 64px; } 
+		.sprite-17{ background-position: 0 -1024px; width: 64px; height: 64px; } 
+		.sprite-18{ background-position: 0 -1088px; width: 64px; height: 64px; } 
+		.sprite-19{ background-position: 0 -1152px; width: 64px; height: 64px; } 
+		.sprite-20{ background-position: 0 -1216px; width: 64px; height: 64px; } 
+		.sprite-21{ background-position: 0 -1280px; width: 64px; height: 64px; } 
+		.sprite-22{ background-position: 0 -1344px; width: 64px; height: 64px; } 
+		.sprite-23{ background-position: 0 -1408px; width: 64px; height: 64px; }
+		.sprite-24{ background-position: 0 -1472px; width: 64px; height: 64px; }
+		.sprite-25{ background-position: 0 -1536px; width: 64px; height: 64px; }
+
+
+
+
+		#creatorMenu{
+			position: absolute;
+			background-size: cover;
+			top: 40%;
+			width: 160px;
+			height: 136px;
+			zoom: 2;
+			font-family: cool_font;color:black;
+
+
+		}
+
+		#partType {
+			position: absolute;
+			top: 70px;
+			left: 5px;
+		}
+
+		#partInfo {
+			position: absolute;
+			top: 90px;
+			left: 5px;
+			font-size: 10;
+		}
+
+
+		.arrow-right{
+			border: none;
+			background-color: transparent;
+			position: relative;
+			width: 24px; height: 24px;
+			top: 45px;
+			left: 97px;
+		}
+
+		.arrow-left{	
+						border: none;
+						width: 24px; height: 24px;
+						background-color: transparent;
+						position: relative;
+						top: 45px;
+						left: 10px;
+					}
+
+		#save{
+			position: absolute;
+			font-family: cool_font;color: black;
+		}
+
+	</style>
+</head>
+<body>
+
+
+<div id = "creatorMenu" style = "background-image: url('gui/menutest.svg')">
+<button class = "arrow-left" onclick = "gSpaceShip.modifyGui('-')"></button>
+<button class = "arrow-right" onclick = "gSpaceShip.modifyGui('+')"></button>
+<button id = "save" onclick = "gSpaceShip.createShip()">Save</button>
+
+</div>
+
+
+
+<canvas id = "my_canvas" width="500" height="500" style= "outline: #e4ff00 solid, position:absolute;"></canvas>
+</body>
+<script type="text/javascript" src= "Stats.js"></script>
+<script type="text/javascript" src= "box2D.js"></script>
+
+<script type="text/javascript" src="xhr.js"></script>
+<script type="text/javascript" src="core.js"></script>
+<script type="text/javascript" src="SuperMapClass.js"></script>
+<script type="text/javascript" src="EntityClass.js"></script>
+<script type="text/javascript" src="PhysicsEngineClass.js"></script>
+
+<script type="text/javascript" src="GameEngineClass.js"></script>
+<script type="text/javascript" src="inputEngine.js"></script>
+<script type="text/javascript" src= "PlayerClass.js"></script>
+<script type="text/javascript" src= "entities/physics/BasicPhysicsClass.js"></script>
+<script type="text/javascript" src= "entities/physics/GravitySensorClass.js"></script>
+<script type="text/javascript" src= "entities/createSpaceShip.js"></script>
+<script type="text/javascript" src= "particleClass.js"></script>
+<script type="text/javascript" src="dat.gui.min.js"></script>
+
+
+
+	<script src="jquery-1.9.1.js"></script>
+	<script src="jquery-ui-1.10.3.custom.min.js"></script>
+
+
+	<script type="text/javascript">
+
+	var zoom = $('#creatorMenu').css('zoom');
+
+	$('#creatorMenu').draggable({
+	    drag: function(evt,ui)
+	    {
+
+	    },
+	    snap: true, containment: "#my_canvas"        
+});
+
+
+	</script>
+
+
+
+
+</html>

@@ -1,0 +1,131 @@
+{
+    "parts": [
+        {
+            "type": "standardHull",
+            "partID": 0,
+            "info": "This is a standard hull."
+        },
+        {
+            "type": "wing",
+            "partID": 1,
+            "info": "This wing improves stabillity"
+        },
+        {
+            "type": "wing",
+            "partID": 2,
+            "info": "This wing improves stabillity"
+        },
+        {
+            "type": "wing",
+            "partID": 3,
+            "info": "This wing improves stabillity"
+        },
+        {
+            "type": "wing",
+            "partID": 4,
+            "info": "This wing improves stabillity"
+        },
+        
+        {
+            "type": "weapon",
+            "partID": 5,
+            "info": "This weapon shoots over your ship so it can be placed in a more secure location."
+        },
+        {
+            "type": "weapon",
+            "partID": 6,
+            "info": "This is a blaster weapon that fires forward and needs clear sight to fire."
+        },
+        {
+            "type": "thruster",
+            "partID": 7,
+            "info": "Standard quality MX-247 thruster."
+        },
+        {
+            "type": "heatRegulator",
+            "partID": 8,
+            "info": "Standard heat regulator for the ship CPU."
+        },
+        {
+            "type": "radar",
+            "partID": 9,
+            "info": "Radar Mk-1 that detect incoming enemies"
+        },
+        {
+            "type": "radar",
+            "partID": 10,
+            "info": "Radar Mk-2."
+        },
+        {
+            "type": "standardHull",
+            "partID": 11,
+            "info": "This is a standard hull."
+        },
+        {
+            "type": "standardHull",
+            "partID": 12,
+            "info": "This is a standard hull."
+        },
+        {
+            "type": "standardHull",
+            "partID": 13,
+            "info": "This is a standard hull."
+        },
+        {
+            "type": "standardHull",
+            "partID": 14,
+            "info": "This is a standard hull."
+        },
+        {
+            "type": "standardHull",
+            "partID": 15,
+            "info": "This is a standard hull."
+        },
+        {
+            "type": "standardHull",
+            "partID": 16,
+            "info": "This is a standard hull."
+        },
+        {
+            "type": "standardHull",
+            "partID": 17,
+            "info": "This is a standard hull."
+        },
+        {
+            "type": "standardHull",
+            "partID": 18,
+            "info": "This is a standard hull."
+        },
+        {
+            "type": "standardHull",
+            "partID": 19,
+            "info": "This is a standard hull."
+        },
+        {
+            "type": "standardHull",
+            "partID": 20,
+            "info": "This is a standard hull."
+        },
+        {
+            "type": "standardHull",
+            "partID": 21,
+            "info": "This is a standard hull."
+        },
+        {
+            "type": "standardHull",
+            "partID": 22,
+            "info": "This is a standard hull."
+        },
+        {
+            "type": "leftThruster",
+            "partID": 23,
+            "info": "This thruster is used to turn right"
+        },
+        {
+            "type": "rightThruster",
+            "partID": 24,
+            "info": "This thruster is used to turn left"
+        }
+
+    ]
+}
